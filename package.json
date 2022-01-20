@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "init": "^0.1.2",
+    "testcafe": "^1.18.1"
+  },
+  "name": "automation_practice_ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./test"
+  },
+  "author": "Ilse Macías",
+  "license": "ISC",
+  "description": ""
+}
