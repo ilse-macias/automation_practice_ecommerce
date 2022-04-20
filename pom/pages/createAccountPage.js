@@ -33,6 +33,7 @@ class CreateAccountPage{
             .typeText(this.zipCodeTextBox, '91911')
             .typeText(this.mobilePhoneTextBox, '858-900-7812')
             .typeText(this.referenceTextBox, 'Juan Martínez')
+            .click(this.registerButton)
     }
 
 }

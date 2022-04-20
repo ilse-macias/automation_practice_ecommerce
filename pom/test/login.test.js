@@ -6,19 +6,26 @@ import HomePage from '../pages/homePage'
 
 fixture("Create an account")
     .page `http://automationpractice.com/`
-    
-//HomePage
-test('Create a new account successfully', async t =>{
-    await t
+    .beforeEach(async t =>{
+        await t
         .maximizeWindow()
+    })
+
+test('Create a new account successfully', async t =>{
     await HomePage
         .clickOnSignInButton()
      await AuthenticationPage
         .clickOnCreateAnAccountButton()
     await CreateAccountPage
         .personalInformationFillOut()
+})
 
-    })
+test('Login successfully', async t =>{
+    await HomePage
+        .clickOnSignInButton()
+    await AuthenticationPage
+        .clickOnSignInButton()
+})
 
 
 
