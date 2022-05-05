@@ -23,6 +23,7 @@ class AuthenticationPage{
             .typeText(this.emailRegistredTextBox, 'email@qa.team')
             .typeText(this.emailRegistredTextBox, '123456')
             .click(this.signInButton)
+            //.takeScreenshot()
     }
 }
 

@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome ./pom/test",
+    "test": "testcafe ./pom/test",
     "test-screenshot": "testcafe chrome ./pom/test/product.test.js -s takeOnFails=true",
     "test-video": "testcafe chrome ./pom/test/product.test.js --video artifacts/video"
   },

@@ -10,7 +10,7 @@ fixture("Create an account")
         .maximizeWindow()
     })
 
-test('Search a product from home page', async t=>{
+test.only('Search a product from home page', async t=>{
     await HomePage
-        .searchAProduct()
+        .searchAProduct('blouse')
 })
